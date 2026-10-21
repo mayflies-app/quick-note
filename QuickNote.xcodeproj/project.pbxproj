@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3CCCF0E6BB06F4E7B129645 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7B28A2ACABD7637834B312CF /* LICENSE */; };
+		D131AA93E28080081AF5ED5D /* ShortcutRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B861395334E4C45637EEF /* ShortcutRecorder.swift */; };
+		031A65C6FF421CFA0EAA9BCB /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E474C92AAFAC105976F4EC18 /* SettingsWindowController.swift */; };
+		0F24F74CE8F7CD63F8F8E174 /* EditorSnapshotCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E3F63827057BC82F67BDDF /* EditorSnapshotCache.swift */; };
+		1185BCCA16187381A8E11D85 /* EditorShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE03D28D0B545A3225A1269 /* EditorShortcuts.swift */; };
+		177E64B8057C4D35493717E9 /* GlobalShortcutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A38ABE32993D5BE9EF4C68 /* GlobalShortcutController.swift */; };
+		1900C28C4413FE64FD13267A /* MacAppDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269AEA87BECA43D3FC17DC5B /* MacAppDesign.swift */; };
+		1E06BB78755C9A5123D3BA8F /* AppLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB4DFD5C8BE83FD7BA3175 /* AppLocalization.swift */; };
+		3A4B3DBC15C715EB20EC570B /* AppLanguageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB218010357BE6F964FB926 /* AppLanguageTests.swift */; };
+		3E3C83C85E8758DB0CF32D61 /* QuickNoteCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF6877CA5BA7AED6326916F /* QuickNoteCore */; };
+		41F07E521F29BBF631F6FE7E /* EditorDocumentCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C837D55FF8BB89633450F1 /* EditorDocumentCodec.swift */; };
+		4AC052F5134A32A9E1ADF83E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB38088E640C4DDE2A88C1EA /* SettingsView.swift */; };
+		5978CFA1562B2D98F6BF1848 /* WindowPlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2645F60243BDD3EDAB3098 /* WindowPlacement.swift */; };
+		5F92A73BA7F0D27EF0D72929 /* SettingsPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E9D1455600D88C42DB07A /* SettingsPalette.swift */; };
+		604B916395B4E9CCFA277108 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 66922D9358FCC69FD0076C6D /* AppIcon.icns */; };
+		61C67AB939F01DD28BA0D3ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D46E07D8AA1D3E8F692F0E67 /* InfoPlist.strings */; };
+		6A83A60386CCD6F2AE7E454A /* QuickNoteCore in Frameworks */ = {isa = PBXBuildFile; productRef = 72FEFC2477607157FF365CEA /* QuickNoteCore */; };
+		7218453E82729B9AEE86F7B6 /* LoginItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF7C0075A90FB0751C8423C /* LoginItemController.swift */; };
+		7AC58869CBD64C81D89C0751 /* WorkflowVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0C2E65E906B3EA4845470B /* WorkflowVerifier.swift */; };
+		883559AFE12B5FDACE5A21B1 /* NoteStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5003C5E3B149A2AF88214C9 /* NoteStoreTests.swift */; };
+		A4DB7F363B3C96374369C2DB /* MinimalChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110F1241B2375273577528AC /* MinimalChrome.swift */; };
+		BE0283C62B1C0DFDD3AF9352 /* NoteWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A7624BDE00F7BCAD9F630 /* NoteWindowController.swift */; };
+		BFEC703FC34BCA0C22A96C2B /* NoteEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FA8C2CD7DF9FD857F3D8E8 /* NoteEditorViewController.swift */; };
+		C0192CEC363E8082D0277181 /* EditorTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895D80ED339DF42947660F6 /* EditorTypography.swift */; };
+		D0B4632496FD8142961194DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF4772A697099707D1B04C /* AppDelegate.swift */; };
+		E30609CC40D295197E037E3F /* EditorListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A113E772C72AC36CFBCF90 /* EditorListLayout.swift */; };
+		EF9D84C722828E53A712736C /* EditorFormatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F723A924666185D610146754 /* EditorFormatState.swift */; };
+		F2F0F807FB4B5ED4BCFEE0A6 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C00438B942BA566DE91B0 /* AppPreferences.swift */; };
+		FAEB03951CFEAF701C91AFBF /* EditorFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368EE48207B279A8AE1C586D /* EditorFont.swift */; };
+		FE47F936B9EA3275789E117A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9507BE9FE60852EC2D31881 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B28A2ACABD7637834B312CF /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
+		D99B861395334E4C45637EEF /* ShortcutRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutRecorder.swift; sourceTree = "<group>"; };
+		0DF7C0075A90FB0751C8423C /* LoginItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemController.swift; sourceTree = "<group>"; };
+		110F1241B2375273577528AC /* MinimalChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalChrome.swift; sourceTree = "<group>"; };
+		269AEA87BECA43D3FC17DC5B /* MacAppDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppDesign.swift; sourceTree = "<group>"; };
+		2DB218010357BE6F964FB926 /* AppLanguageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguageTests.swift; sourceTree = "<group>"; };
+		35E3F63827057BC82F67BDDF /* EditorSnapshotCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorSnapshotCache.swift; sourceTree = "<group>"; };
+		368EE48207B279A8AE1C586D /* EditorFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorFont.swift; sourceTree = "<group>"; };
+		39C837D55FF8BB89633450F1 /* EditorDocumentCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDocumentCodec.swift; sourceTree = "<group>"; };
+		3B0C2E65E906B3EA4845470B /* WorkflowVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowVerifier.swift; sourceTree = "<group>"; };
+		4340AF813A09A57A5E0EF0D6 /* QuickNoteCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickNoteCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52AB4DFD5C8BE83FD7BA3175 /* AppLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocalization.swift; sourceTree = "<group>"; };
+		61FF4772A697099707D1B04C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66922D9358FCC69FD0076C6D /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		7AE03D28D0B545A3225A1269 /* EditorShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorShortcuts.swift; sourceTree = "<group>"; };
+		80A38ABE32993D5BE9EF4C68 /* GlobalShortcutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalShortcutController.swift; sourceTree = "<group>"; };
+		8C2A7624BDE00F7BCAD9F630 /* NoteWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteWindowController.swift; sourceTree = "<group>"; };
+		8E2E9D1455600D88C42DB07A /* SettingsPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPalette.swift; sourceTree = "<group>"; };
+		97CF16CB859D5F446E31D4B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A2645F60243BDD3EDAB3098 /* WindowPlacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowPlacement.swift; sourceTree = "<group>"; };
+		A4D839643B0C291A455C5EAA /* quick-note */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "quick-note"; path = .; sourceTree = SOURCE_ROOT; };
+		A895D80ED339DF42947660F6 /* EditorTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorTypography.swift; sourceTree = "<group>"; };
+		A9507BE9FE60852EC2D31881 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B2A113E772C72AC36CFBCF90 /* EditorListLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorListLayout.swift; sourceTree = "<group>"; };
+		B4BB5F2F64F9729C559695D1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		B5003C5E3B149A2AF88214C9 /* NoteStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteStoreTests.swift; sourceTree = "<group>"; };
+		CA5C00438B942BA566DE91B0 /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		D29DBF52163D2DB381BBD96E /* QuickNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E474C92AAFAC105976F4EC18 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		E8FA8C2CD7DF9FD857F3D8E8 /* NoteEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditorViewController.swift; sourceTree = "<group>"; };
+		EB38088E640C4DDE2A88C1EA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F723A924666185D610146754 /* EditorFormatState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorFormatState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88068C075F38ACDB10C67BAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A83A60386CCD6F2AE7E454A /* QuickNoteCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DCAF08277E5609663E9319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3C83C85E8758DB0CF32D61 /* QuickNoteCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F70FA48843006A8F090AB4A /* QuickNoteCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DB218010357BE6F964FB926 /* AppLanguageTests.swift */,
+				B5003C5E3B149A2AF88214C9 /* NoteStoreTests.swift */,
+			);
+			path = QuickNoteCoreTests;
+			sourceTree = "<group>";
+		};
+		2F3AD2E4DAA5832E1C0D40D9 /* Editing */ = {
+			isa = PBXGroup;
+			children = (
+				39C837D55FF8BB89633450F1 /* EditorDocumentCodec.swift */,
+				368EE48207B279A8AE1C586D /* EditorFont.swift */,
+				F723A924666185D610146754 /* EditorFormatState.swift */,
+				B2A113E772C72AC36CFBCF90 /* EditorListLayout.swift */,
+				7AE03D28D0B545A3225A1269 /* EditorShortcuts.swift */,
+				35E3F63827057BC82F67BDDF /* EditorSnapshotCache.swift */,
+				A895D80ED339DF42947660F6 /* EditorTypography.swift */,
+				E8FA8C2CD7DF9FD857F3D8E8 /* NoteEditorViewController.swift */,
+			);
+			path = Editing;
+			sourceTree = "<group>";
+		};
+		3699BF1F8B66228C6DF041A8 /* QuickNote */ = {
+			isa = PBXGroup;
+			children = (
+				61FF4772A697099707D1B04C /* AppDelegate.swift */,
+				52AB4DFD5C8BE83FD7BA3175 /* AppLocalization.swift */,
+				CA5C00438B942BA566DE91B0 /* AppPreferences.swift */,
+				0DF7C0075A90FB0751C8423C /* LoginItemController.swift */,
+				269AEA87BECA43D3FC17DC5B /* MacAppDesign.swift */,
+				A9507BE9FE60852EC2D31881 /* main.swift */,
+				110F1241B2375273577528AC /* MinimalChrome.swift */,
+				8C2A7624BDE00F7BCAD9F630 /* NoteWindowController.swift */,
+				8E2E9D1455600D88C42DB07A /* SettingsPalette.swift */,
+				EB38088E640C4DDE2A88C1EA /* SettingsView.swift */,
+				E474C92AAFAC105976F4EC18 /* SettingsWindowController.swift */,
+				9A2645F60243BDD3EDAB3098 /* WindowPlacement.swift */,
+				3B0C2E65E906B3EA4845470B /* WorkflowVerifier.swift */,
+				2F3AD2E4DAA5832E1C0D40D9 /* Editing */,
+				C160CBC9AE0A54DB47C92BD8 /* Shortcuts */,
+			);
+			path = QuickNote;
+			sourceTree = "<group>";
+		};
+		36F6B0B2BB200036EC556C27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D29DBF52163D2DB381BBD96E /* QuickNote.app */,
+				4340AF813A09A57A5E0EF0D6 /* QuickNoteCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C439E61BABAA3D6FE0F8060 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1F70FA48843006A8F090AB4A /* QuickNoteCoreTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		7950BF9052B3843518275E43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66922D9358FCC69FD0076C6D /* AppIcon.icns */,
+				D46E07D8AA1D3E8F692F0E67 /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B33C2451D96CF74B74CE393E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3699BF1F8B66228C6DF041A8 /* QuickNote */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C08DE97F6249E518FF6E0F4B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A4D839643B0C291A455C5EAA /* quick-note */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		C160CBC9AE0A54DB47C92BD8 /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				80A38ABE32993D5BE9EF4C68 /* GlobalShortcutController.swift */,
+				D99B861395334E4C45637EEF /* ShortcutRecorder.swift */,
+			);
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
+		E1F28972ED15FC0E8A42677F = {
+			isa = PBXGroup;
+			children = (
+				7B28A2ACABD7637834B312CF /* LICENSE */,
+				C08DE97F6249E518FF6E0F4B /* Packages */,
+				7950BF9052B3843518275E43 /* Resources */,
+				B33C2451D96CF74B74CE393E /* Sources */,
+				4C439E61BABAA3D6FE0F8060 /* Tests */,
+				36F6B0B2BB200036EC556C27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28549BC29E3157B343463F7D /* QuickNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E2FB8E811AC42C7164560E /* Build configuration list for PBXNativeTarget "QuickNote" */;
+			buildPhases = (
+				E20F86F03250D80BD9056529 /* Read app version */,
+				DA64DC3EC6782A417C823759 /* Sources */,
+				54AE5B905769DF9A726D33DD /* Resources */,
+				A1DCAF08277E5609663E9319 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickNote;
+			packageProductDependencies = (
+				3BF6877CA5BA7AED6326916F /* QuickNoteCore */,
+			);
+			productName = QuickNote;
+			productReference = D29DBF52163D2DB381BBD96E /* QuickNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B116094A97828F38ED6CDD3F /* QuickNoteCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A533A0FB5CEF59064508A63A /* Build configuration list for PBXNativeTarget "QuickNoteCoreTests" */;
+			buildPhases = (
+				5399D2C7075F12D88951284B /* Sources */,
+				88068C075F38ACDB10C67BAD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickNoteCoreTests;
+			packageProductDependencies = (
+				72FEFC2477607157FF365CEA /* QuickNoteCore */,
+			);
+			productName = QuickNoteCoreTests;
+			productReference = 4340AF813A09A57A5E0EF0D6 /* QuickNoteCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD6618CAA0BFB98EB1C359B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					28549BC29E3157B343463F7D = {
+						DevelopmentTeam = 79X3F8NVAV;
+						ProvisioningStyle = Manual;
+					};
+					B116094A97828F38ED6CDD3F = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 83751AAC8675C24C0DAEC227 /* Build configuration list for PBXProject "QuickNote" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				"zh-Hans",
+			);
+			mainGroup = E1F28972ED15FC0E8A42677F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4C1B7D046A17301A25362E0D /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 36F6B0B2BB200036EC556C27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28549BC29E3157B343463F7D /* QuickNote */,
+				B116094A97828F38ED6CDD3F /* QuickNoteCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54AE5B905769DF9A726D33DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CCCF0E6BB06F4E7B129645 /* LICENSE in Resources */,
+				604B916395B4E9CCFA277108 /* AppIcon.icns in Resources */,
+				61C67AB939F01DD28BA0D3ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E20F86F03250D80BD9056529 /* Read app version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/VERSION",
+				"$(SRCROOT)/scripts/lib/release/release_contract.py",
+			);
+			name = "Read app version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/AppVersion.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\nversion=$(python3 -B -c 'import runpy, sys; from pathlib import Path; validate_version = runpy.run_path(sys.argv[1])[\"validate_version\"]; print(validate_version(Path(sys.argv[2]).read_text().strip()).split(\"-\")[0])' \"$SCRIPT_INPUT_FILE_1\" \"$SCRIPT_INPUT_FILE_0\")\nprintf '#define MAYFLIES_APP_VERSION %s\\n' \"$version\" > \"$SCRIPT_OUTPUT_FILE_0\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5399D2C7075F12D88951284B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4B3DBC15C715EB20EC570B /* AppLanguageTests.swift in Sources */,
+				883559AFE12B5FDACE5A21B1 /* NoteStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA64DC3EC6782A417C823759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B4632496FD8142961194DF /* AppDelegate.swift in Sources */,
+				1E06BB78755C9A5123D3BA8F /* AppLocalization.swift in Sources */,
+				F2F0F807FB4B5ED4BCFEE0A6 /* AppPreferences.swift in Sources */,
+				41F07E521F29BBF631F6FE7E /* EditorDocumentCodec.swift in Sources */,
+				FAEB03951CFEAF701C91AFBF /* EditorFont.swift in Sources */,
+				EF9D84C722828E53A712736C /* EditorFormatState.swift in Sources */,
+				E30609CC40D295197E037E3F /* EditorListLayout.swift in Sources */,
+				1185BCCA16187381A8E11D85 /* EditorShortcuts.swift in Sources */,
+				0F24F74CE8F7CD63F8F8E174 /* EditorSnapshotCache.swift in Sources */,
+				C0192CEC363E8082D0277181 /* EditorTypography.swift in Sources */,
+				177E64B8057C4D35493717E9 /* GlobalShortcutController.swift in Sources */,
+				D131AA93E28080081AF5ED5D /* ShortcutRecorder.swift in Sources */,
+				7218453E82729B9AEE86F7B6 /* LoginItemController.swift in Sources */,
+				1900C28C4413FE64FD13267A /* MacAppDesign.swift in Sources */,
+				A4DB7F363B3C96374369C2DB /* MinimalChrome.swift in Sources */,
+				BFEC703FC34BCA0C22A96C2B /* NoteEditorViewController.swift in Sources */,
+				BE0283C62B1C0DFDD3AF9352 /* NoteWindowController.swift in Sources */,
+				5F92A73BA7F0D27EF0D72929 /* SettingsPalette.swift in Sources */,
+				4AC052F5134A32A9E1ADF83E /* SettingsView.swift in Sources */,
+				031A65C6FF421CFA0EAA9BCB /* SettingsWindowController.swift in Sources */,
+				5978CFA1562B2D98F6BF1848 /* WindowPlacement.swift in Sources */,
+				7AC58869CBD64C81D89C0751 /* WorkflowVerifier.swift in Sources */,
+				FE47F936B9EA3275789E117A /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D46E07D8AA1D3E8F692F0E67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97CF16CB859D5F446E31D4B2 /* en */,
+				B4BB5F2F64F9729C559695D1 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F1CA792E46E7A910CA88C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		522E09BB35EE1398D67E18CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "arm64 x86_64";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "$(DERIVED_FILE_DIR)/AppVersion.h";
+				INFOPLIST_PREPROCESS = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = app.mayfiles.QuickNote;
+				PRODUCT_NAME = QuickNote;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5A25FEFF9D3ADB7D12AD2D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_DEBUG_DYLIB = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "$(DERIVED_FILE_DIR)/AppVersion.h";
+				INFOPLIST_PREPROCESS = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.mayfiles.QuickNote;
+				PRODUCT_NAME = QuickNote;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6D577C9C6AC4460B6BC9CA6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.mayfiles.QuickNote.QuickNoteCoreTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		772F6623EF1CF09440F62292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.mayfiles.QuickNote.QuickNoteCoreTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D512439429323907C265BA34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41E2FB8E811AC42C7164560E /* Build configuration list for PBXNativeTarget "QuickNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A25FEFF9D3ADB7D12AD2D37 /* Debug */,
+				522E09BB35EE1398D67E18CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		83751AAC8675C24C0DAEC227 /* Build configuration list for PBXProject "QuickNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D512439429323907C265BA34 /* Debug */,
+				0F1CA792E46E7A910CA88C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A533A0FB5CEF59064508A63A /* Build configuration list for PBXNativeTarget "QuickNoteCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D577C9C6AC4460B6BC9CA6D /* Debug */,
+				772F6623EF1CF09440F62292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4C1B7D046A17301A25362E0D /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BF6877CA5BA7AED6326916F /* QuickNoteCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QuickNoteCore;
+		};
+		72FEFC2477607157FF365CEA /* QuickNoteCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QuickNoteCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CD6618CAA0BFB98EB1C359B4 /* Project object */;
+}

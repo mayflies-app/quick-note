@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "product": "QuickNote",
+  "appName": "QuickNote",
+  "executable": "QuickNote",
+  "bundleIdentifier": "app.mayfiles.QuickNote",
+  "repository": "mayflies-app/quick-note",
+  "caskToken": "quicknote",
+  "description": "Keep a native single-page note with local persistence",
+  "minimumSystemVersion": "14.0",
+  "buildSystem": "swiftpm",
+  "architectures": [
+    "arm64",
+    "x86_64",
+    "universal"
+  ],
+  "versionFile": "VERSION",
+  "releaseAdapter": "scripts/app.py",
+  "paths": {
+    "sharedRelease": "scripts/lib/release",
+    "project": "QuickNote.xcodeproj"
+  },
+  "packaging": {
+    "infoPlist": "Resources/Info.plist",
+    "resources": [
+      "LICENSE",
+      "Resources/AppIcon.icns",
+      "Resources/en.lproj",
+      "Resources/zh-Hans.lproj"
+    ],
+    "resourceBundles": [
+      "QuickNote_QuickNoteCore.bundle"
+    ],
+    "dependencyLicenses": []
+  },
+  "xcode": {
+    "scheme": "QuickNote"
+  },
+  "testScripts": [
+    "Tests/Tools/test-native-verification.sh"
+  ],
+  "nativeTests": {
+    "localizationScript": "Tests/Tools/verify-native.sh"
+  },
+  "shared": {
+    "designDestination": "Sources/QuickNote/MacAppDesign.swift",
+    "localizationDestination": "Sources/QuickNoteCore/LocalizationResources.swift"
+  }
+}
