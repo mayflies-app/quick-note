@@ -50,3 +50,14 @@ Tracked-input timestamps are reused only when content hashes, modes and checkout
 Public distribution uses immutable, Developer ID signed, notarized release assets. The release workflow verifies downloaded assets against the prepared bytes and updates `Casks/quicknote.rb` in the distribution tap with the Universal DMG URL and checksum.
 
 Maintain published casks through the release workflow so installation uses verified public release assets. See the tap's [distribution documentation](https://github.com/mayflies-app/homebrew-tap/blob/main/docs/homebrew.md).
+
+## Release Diagnostics
+
+Release logs identify stages, failure kinds and external exit codes, with credential-safe
+GitHub error annotations. See [shared release diagnostics](https://github.com/mayflies-app/homebrew-tap/blob/main/docs/homebrew.md#release-diagnostics)
+for authentication, authorization, repository access, network, concurrency and validation errors.
+Tap updates use `HOMEBREW_TAP_TOKEN`, separately from the app workflow token.
+
+A tap failure after successful publication leaves the release assets published. Repair
+the cask from those verified public assets; do not rebuild or replace the same version.
+Only confirmed concurrent push rejection is rebased and retried.
