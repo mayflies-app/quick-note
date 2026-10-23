@@ -238,7 +238,7 @@ if os.environ.get("NATIVE_TEST_PARTIAL_SNAPSHOT_JSON") == "1":
                     return False
             try:
                 if inject_log_failure:
-                    text, _ = process.communicate(timeout=2)
+                    text, _ = process.communicate(timeout=cleanup_timeout)
                     match = re.search(r"phase=write pid=([0-9]+)", text)
                     owned_pid = int(match.group(1)) if match else None
                     result = subprocess.CompletedProcess(command, process.returncode, text)
@@ -681,7 +681,8 @@ if os.environ.get("NATIVE_TEST_PARTIAL_SNAPSHOT_JSON") == "1":
     run_case("regression stubborn spawned phase log failure cleans owned PID", "workflow", standard_args,
              stubborn_log_cleanup,
              {"NATIVE_TEST_DELAY_SECONDS": "60", "NATIVE_TEST_FAIL_PID_LOG": "1", "NATIVE_TEST_IGNORE_TERM": "1"},
-             status="failure", inject_log_failure=True)
+             # Cover interpreter startup, up to 2s readiness, and 1s TERM grace.
+             status="failure", inject_log_failure=True, cleanup_timeout=5)
 
 print(f"{passed} passed, {failed} failed; fake compiler/recorder/App only, spaced project paths, foreign cwd")
 if passed + failed == 0:
